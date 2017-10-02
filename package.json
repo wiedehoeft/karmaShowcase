@@ -1,0 +1,35 @@
+{
+  "name": "karmashowcase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test-once": "tsc && karma start karma.conf.js --single-run",
+    "tsc": "tsc",
+    "karma": "karma"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "concurrently": "^3.5.0",
+    "core-js": "^2.5.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-requirejs": "^1.1.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.19"
+  }
+}
